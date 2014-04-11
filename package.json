@@ -1,0 +1,18 @@
+{
+  "name": "lux-ex-machina",
+  "version": "0.0.1",
+  "description": "digital systems project",
+  "author": "Mark Keele <mkeele@indiana.edu>",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.5.1",
+    "jade": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.iu.edu:mkeele/lux-ex-machina.git"
+  }
+}

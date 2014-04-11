@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  div.container
+    h1.text-center= title
+    table.table.table-hover
+      tr
+        td ISO
+        td 
+          select.form-control
+            option 100
+            option 200
+            option 300
+      tr
+      tr
+        td Aperture
+        td 1.0
+      tr
+      tr
+        td Shutter Speed
+        td 1s
+      tr
+    input.btn(type="button", class="btn btn-default btn-lg btn-block", value="Capture")
+    div.footer
+      p.small.text-center JRAK CO. 2014
