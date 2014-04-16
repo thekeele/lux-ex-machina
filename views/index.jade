@@ -9,24 +9,38 @@ block content
       //div#help
         //button ?
     table.table.table-hover
+      colgroup
+        col(span="1" style="width: 10%;")
+        col(span="1" style="width: 5%;")
+        col(span="1" style="width: 85%;")
       tr
-        td ISO
+        th ISO
+        td
+          button(type="button" class="btn btn-default" id="f_lock")
+            i(class="fa fa-lock fa-2x")
         td 
           select.form-control
             option 100
             option 200
             option 300
+            option 400
+            option 500
+            option 600
+            option 700
+            option 800
       tr
-        td Aperture
+        th Aperture
         td
-          //button(type="button" class="btn btn-default" id="f_lock")
-            //span.glyphicon.glyphicon-lock
+          button(type="button" class="btn btn-default" id="f_lock")
+            i(class="fa fa-lock fa-2x")
+        td
           div#f_slider
       tr
-        td Shutter Speed
+        th Shutter Speed
         td
-          //button(type="button" class="btn btn-default" id="s_lock")
-            //span.glyphicon.glyphicon-lock
+          button(type="button" class="btn btn-default" id="s_lock")
+            i(class="fa fa-unlock-alt fa-2x")
+        td
           div#s_slider
       tr
     input.btn(type="button", class="btn btn-default btn-lg btn-block", value="Capture")
