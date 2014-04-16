@@ -1,13 +1,10 @@
 extends layout
 
 block content
+
+  div.jumbotron
+    h1.text-center= title
   div.container
-    div.jumbotron
-      h1.text-center= title
-      div.alert.alert-info
-        p this is here to help you
-      //div#help
-        //button ?
     table.table.table-hover
       colgroup
         col(span="1" style="width: 10%;")
@@ -44,5 +41,6 @@ block content
           div#s_slider
       tr
     input.btn(type="button", class="btn btn-default btn-lg btn-block", value="Capture")
-    div.footer
+  div.footer
+    div.jumbotron
       p.small.text-center JRAK CO. 2014
