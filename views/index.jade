@@ -7,16 +7,16 @@ block content
   div.container
     table.table.table-hover
       colgroup
-        col(span="1" style="width: 10%;")
         col(span="1" style="width: 5%;")
-        col(span="1" style="width: 85%;")
+        col(span="1" style="width: 5%;")
+        col(span="1" style="width: 90%;")
       tr
         th ISO
         td
-          button(type="button" class="btn btn-default" id="f_lock")
-            i(class="fa fa-lock fa-2x")
+          button(type="button" class="btn btn-default" id="i_lock")
+            i(id="i_icon" class="fa fa-unlock-alt fa-2x")
         td 
-          select.form-control
+          select(id="iso_select" class="form-control")
             option 100
             option 200
             option 300
@@ -29,16 +29,18 @@ block content
         th Aperture
         td
           button(type="button" class="btn btn-default" id="f_lock")
-            i(class="fa fa-lock fa-2x")
+            i(id="f_icon" class="fa fa-unlock-alt fa-2x")
         td
           div#f_slider
+          input(type="text" id="f_amount" class="form-control" placeholder="Aperture" readonly="true")
       tr
         th Shutter Speed
         td
           button(type="button" class="btn btn-default" id="s_lock")
-            i(class="fa fa-unlock-alt fa-2x")
+            i(id="s_icon" class="fa fa-unlock-alt fa-2x")
         td
           div#s_slider
+          input(type="text" id="s_amount" class="form-control" placeholder="Shutter Speed" readonly="true")
       tr
     input.btn(type="button", class="btn btn-default btn-lg btn-block", value="Capture")
   div.footer

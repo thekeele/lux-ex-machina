@@ -1,8 +1,19 @@
-body {
+/* baked in style */
+/*body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}*/
+
+/* jquery ui slider */
+.ui-slider-horizontal {
+    height: 35px;
+    width: 100%;
+}
+.ui-slider .ui-slider-handle {
+    height: 45px;
+    width: 30px;
 }
