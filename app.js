@@ -1,13 +1,15 @@
-
 /**
- * Module dependencies.
+ * Main app/server file
+ * app.js
  */
 
+// required packages
 var express = require('express');
 var routes = require('./routes');
 var http = require('http');
 var path = require('path');
 
+// create the app
 var app = express();
 
 // all environments
@@ -24,11 +26,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // development only
 if ('development' == app.get('env')) {
-  app.use(express.errorHandler());
+	app.use(express.errorHandler());
 }
 
 app.get('/', routes.index);
 
 http.createServer(app).listen(app.get('port'), function(){
-  console.log('Express server listening on port ' + app.get('port'));
+	console.log('Express server listening on port ' + app.get('port'));
 });
