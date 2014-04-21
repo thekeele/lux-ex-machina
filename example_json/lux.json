@@ -1,14 +1,13 @@
-[{
-    "luminosity": {
+{
+    "luminosity": [ 
+    {
         "value": "0.01",
         "timestamp": "1398127511"
-    },
-    "luminosity": {
+    },{
         "value": "100",
         "timestamp": "1398113230"
-    },
-    "luminosity": {
+    },{
         "value": "40000",
         "timestamp": "1398113250"
-    }
-}]
+    }]
+}
