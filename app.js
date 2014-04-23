@@ -1,8 +1,8 @@
-/**
- * Module Dependencies
+/*
  * app.js
  */
 
+/* Include Modules */
 var express = require('express')
 	, routes = require('./routes')
 	, gps = require('./routes/gps')

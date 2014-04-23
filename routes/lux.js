@@ -1,27 +1,31 @@
+/*
+ * Routes
+ * lux.js
+ */
+
 /* Include Modules */
 var rest = require('../lib/rest');
+var json_object = '';
 
-/* GET JSON Options */
+/* Store JSON Options */
 var options = {
-    host: 'http://silo.cs.indiana.edu',
-    port: 42424,
-    path: '/u/mkeele/apache/htdocs/example_json/gps',
+    hostname: 'silo.soic.indiana.edu',
+    port: 14226,
+    path: '/example_json/lux.json',
     method: 'GET',
     headers: {
-        'Content-Type': 'application/json'
+        'content-type': 'application/json',
+        'connection': 'keep-alive'
     }
 };
 
 /* GET JSON Object */
-rest.getJSON(options, function(statusCode, result) {
-	//console.log("onResult: (" + statusCode + ")" + JSON.stringify(result));
-	//res.statusCode = statusCode;
-	//res.send(result);
+rest.getJSON(options, function(result, status_code) {
+	console.log('STATUS: '+ status_code + ' JSON: ' + JSON.stringify(result));
+	json_object = JSON.stringify(result);
 });
 
-/*
- * GET lux page
- */
+/* GET lux page */
 exports.findAll = function(req, res) {
-    res.send([{name:'lux1'}, {name:'lux2'}, {name:'lux3'}]);
+    res.send(json_object);
 };
