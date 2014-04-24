@@ -4,28 +4,13 @@
  */
 
 /* Include Modules */
-var rest = require('../lib/rest');
-var json_object = '';
+var gps = require('../models/gps');
 
-/* GET JSON Options */
-var options = {
-    hostname: 'silo.soic.indiana.edu',
-    port: 14226,
-    path: '/example_json/gps.json',
-    method: 'GET',
-    headers: {
-        'content-type': 'application/json',
-        'connection': 'keep-alive'
-    }
-};
-
-/* GET JSON Object */
-rest.getJSON(options, function(result, status_code) {
-	console.log('STATUS: '+ status_code + ' JSON: ' + JSON.stringify(result));
-	json_object = JSON.stringify(result);
-});
-
-/* GET lux page */
+/* GET gps page */
 exports.findAll = function(req, res) {
-    res.send(json_object);
+	
+	gps.return_json(function(result) {
+        console.log(result);
+        res.send(result);  
+    });
 };
