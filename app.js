@@ -1,4 +1,5 @@
 /*
+ * Server
  * app.js
  */
 
@@ -10,10 +11,9 @@ var express = require('express')
 	, http = require('http')
 	, path = require('path');
 
-// create the app
+/* Create App */
 var app = express();
 
-// all environments
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
@@ -25,15 +25,16 @@ app.use(express.methodOverride());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 
-// development only
 if ('development' == app.get('env')) {
 	app.use(express.errorHandler());
 }
 
+/* All Available Routes */
 app.get('/', routes.index);
 app.get('/gps', gps.findAll);
 app.get('/lux', lux.findAll);
 
+/* Create HTTP Server and Listen on a Port */
 http.createServer(app).listen(app.get('port'), function(){
 	console.log('Express server listening on port ' + app.get('port'));
 });
