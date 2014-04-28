@@ -1,6 +1,6 @@
 $(document).ready(function() {
   /* slider js */
-  
+
   /* Typical one-half-stop f-number scale */
   var fRange = [0.70, 0.84, 1.0, 1.2, 1.4, 1.7, 2, 2.4, 2.8, 3.3, 4, 4.8, 5.6, 6.7, 8, 9.5, 11, 13, 16, 19, 22, 27, 32];
 
@@ -16,7 +16,7 @@ $(document).ready(function() {
   });
 
   /* agreed standards for shutter speeds */
-  var sRange = [0.001, 0.002, 0.004, 0.008, 0.01666, 0.0333, 0.0666, 0.125, 0.25, 0.5, 1];
+  var sRange = [1/1000, 1/500, 1/250, 1/125, 1/60, 1/30, 1/15, 1/8, 1/4, 1/2, 1];
 
   // shutter speed slider
   $( "#s_slider" ).slider({ 
@@ -24,8 +24,8 @@ $(document).ready(function() {
     max: sRange.length - 1,
     min: 0,
     value: 3,
-    slide: function(event, ui) {                        
-      $("#s_amount").val(sRange[ui.value] + ' s');                
+    slide: function(event, ui) {                    
+      $("#s_amount").val(sRange[ui.value] + ' s');           
     }
   });// end slider js
 
