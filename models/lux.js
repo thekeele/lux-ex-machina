@@ -9,9 +9,11 @@ var json_object = '';
 
 /* HTTP Options */
 var options = {
-    hostname: 'racer.soic.indiana.edu',
+    //hostname: 'racer.soic.indiana.edu', //production
+    hostname: 'silo.soic.indiana.edu', //dev
     port: 42424,
-    path: '/lux',
+    //path: '/lux', //production
+    path: 'example_json/lux.json',
     method: 'GET',
     headers: {
         'content-type': 'application/json',
