@@ -11,7 +11,8 @@ var json_object = '';
 var options = {
     //hostname: 'racer.soic.indiana.edu', //production
     hostname: 'silo.soic.indiana.edu', //dev
-    port: 42424,
+    //port: 42424, //production
+    port: 14226, //dev
     //path: '/lux', //production
     path: 'example_json/lux.json',
     method: 'GET',
