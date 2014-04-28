@@ -9,7 +9,8 @@
   },
   "dependencies": {
     "express": "3.5.1",
-    "jade": "*"
+    "jade": "*",
+    "mathjs": "*"
   },
   "repository": {
     "type": "git",
