@@ -1,26 +1,31 @@
 $(document).ready(function() {
   /* slider js */
   
+  /* Typical one-half-stop f-number scale */
+  var fRange = [0.70, 0.84, 1.0, 1.2, 1.4, 1.7, 2, 2.4, 2.8, 3.3, 4, 4.8, 5.6, 6.7, 8, 9.5, 11, 13, 16, 19, 22, 27, 32];
+
   // aperture slider
   $( "#f_slider" ).slider({ 
     animate: "slow", // or "fast"
-    max: 32,
-    min: 1.2,
-    step: 0.2,
-    value: 3.5,
+    max: fRange.length - 1,
+    min: 0,
+    value: 7,
     slide: function(event, ui) {                        
-      $("#f_amount").val(ui.value);                
+      $("#f_amount").val('f/' + fRange[ui.value]);                      
     } 
   });
+
+  /* agreed standards for shutter speeds */
+  var sRange = [0.001, 0.002, 0.004, 0.008, 0.01666, 0.0333, 0.0666, 0.125, 0.25, 0.5, 1];
+
   // shutter speed slider
   $( "#s_slider" ).slider({ 
     animate: "slow", // or "fast"
-    max: 30,
-    min: 0.00025, // 1/4000
-    step: 0.5,
-    value: 1,
+    max: sRange.length - 1,
+    min: 0,
+    value: 3,
     slide: function(event, ui) {                        
-      $("#s_amount").val(ui.value + ' s');                
+      $("#s_amount").val(sRange[ui.value] + ' s');                
     }
   });// end slider js
 
