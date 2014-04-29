@@ -14,7 +14,7 @@ var options = {
     //port: 42424, //production
     port: 14226, //dev
     //path: '/lux', //production
-    path: 'example_json/lux.json',
+    path: '/example_json/lux.json',
     method: 'GET',
     headers: {
         'content-type': 'application/json',

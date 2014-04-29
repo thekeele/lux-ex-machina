@@ -14,7 +14,7 @@ var options = {
     //port: 42424, //production
     port: 14226, //dev
     //path: '/gps', //production
-    path: 'example_json/gps.json', //dev
+    path: '/example_json/gps.json', //dev
     method: 'GET',
     headers: {
         'content-type': 'application/json',
