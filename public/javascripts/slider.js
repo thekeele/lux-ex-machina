@@ -17,6 +17,7 @@ $(document).ready(function() {
 
   /* agreed standards for shutter speeds */
   var sRange = [1/1000, 1/500, 1/250, 1/125, 1/60, 1/30, 1/15, 1/8, 1/4, 1/2, 1];
+  var sRangeStr = ['1/1000', '1/500', '1/250', '1/125', '1/60', '1/30', '1/15', '1/8', '1/4', '1/2', '1'];
 
   // shutter speed slider
   $( "#s_slider" ).slider({ 
@@ -25,7 +26,7 @@ $(document).ready(function() {
     min: 0,
     value: 3,
     slide: function(event, ui) {                    
-      $("#s_amount").val(sRange[ui.value] + ' s');           
+      $("#s_amount").val(sRangeStr[ui.value] + ' s');           
     }
   });// end slider js
 
