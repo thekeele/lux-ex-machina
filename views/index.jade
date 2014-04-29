@@ -5,15 +5,12 @@ block content
   div.jumbotron
     h1.text-center= title
   div.container
-    //table.table.table-hover
     table
       colgroup
-        //col(span="1" style="width: 5%;")
         col(span="1" style="width: 5%;")
         col(span="1" style="width: 95%;")
-      tr(class="spaceUnder")
-        //th ISO
-        td
+      tr(class="space-under")
+        td(class="butt-pad")
           button(type="button" class="btn btn-default" id="i_lock")
             i(id="i_icon" class="fa fa-unlock-alt fa-2x")
         td 
@@ -26,17 +23,15 @@ block content
             option ISO 600
             option ISO 700
             option ISO 800
-      tr(class="spaceUnder")
-        //th Aperture
-        td
+      tr(class="space-under")
+        td(class="butt-pad")
           button(type="button" class="btn btn-default" id="f_lock")
             i(id="f_icon" class="fa fa-unlock-alt fa-2x")
         td
           div#f_slider
           input(type="text" id="f_amount" class="form-control" placeholder="Aperture" readonly="true")
-      tr(class="spaceUnder")
-        //th Shutter Speed
-        td
+      tr(class="space-under")
+        td(class="butt-pad")
           button(type="button" class="btn btn-default" id="s_lock")
             i(id="s_icon" class="fa fa-unlock-alt fa-2x")
         td
@@ -44,6 +39,5 @@ block content
           input(type="text" id="s_amount" class="form-control" placeholder="Shutter Speed" readonly="true")
       tr
     input.btn(type="button", class="btn btn-default btn-lg btn-block", value="Capture EXIF")
-  div.footer
-    div.jumbotron
-      p.small.text-center JRAK CO. 2014
+  div.jumbotron(id="custom-jumbo")
+    p.small.text-center JRAK CO. 2014

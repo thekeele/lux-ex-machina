@@ -1,12 +1,21 @@
-/* baked in style */
-/*body {
-  padding: 50px;
+/*
+ * public/stylesheets
+ * style.css
+ */
+
+/* global styles */
+body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
-}*/
+tr.space-under > td {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+td.butt-pad {
+	padding-right: 1em;
+}
 
 /* jquery ui slider */
 .ui-slider-horizontal {
@@ -17,13 +26,4 @@ a {
 .ui-slider .ui-slider-handle {
     height: 45px;
     width: 30px;
-}
-
-table {
-    border-collapse: collapse;
-}
-
-tr.spaceUnder > td
-{
-  padding-bottom: 1em;
 }
