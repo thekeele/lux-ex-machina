@@ -5,12 +5,13 @@ block content
   div.jumbotron
     h1.text-center= title
   div.container
-    table.table.table-hover
+    //table.table.table-hover
+    table
       colgroup
         //col(span="1" style="width: 5%;")
         col(span="1" style="width: 5%;")
         col(span="1" style="width: 95%;")
-      tr
+      tr(class="spaceUnder")
         //th ISO
         td
           button(type="button" class="btn btn-default" id="i_lock")
@@ -25,7 +26,7 @@ block content
             option ISO 600
             option ISO 700
             option ISO 800
-      tr
+      tr(class="spaceUnder")
         //th Aperture
         td
           button(type="button" class="btn btn-default" id="f_lock")
@@ -33,7 +34,7 @@ block content
         td
           div#f_slider
           input(type="text" id="f_amount" class="form-control" placeholder="Aperture" readonly="true")
-      tr
+      tr(class="spaceUnder")
         //th Shutter Speed
         td
           button(type="button" class="btn btn-default" id="s_lock")

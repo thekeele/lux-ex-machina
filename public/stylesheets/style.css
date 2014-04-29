@@ -13,7 +13,17 @@ a {
     height: 35px;
     width: 100%;
 }
+
 .ui-slider .ui-slider-handle {
     height: 45px;
     width: 30px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr.spaceUnder > td
+{
+  padding-bottom: 1em;
 }
