@@ -31,15 +31,15 @@ function compute_exposure(luminosity, iso) {
 
     switch (iso) {
         case 200:
-            return ev - 1;
+            return ev + 1;
         case 400:
-            return ev - 2;
+            return ev + 2;
         case 800:
-            return ev - 3;
+            return ev + 3;
         case 1600:
-            return ev - 4;
+            return ev + 4;
         case 3200:
-            return ev - 5;
+            return ev + 5;
         default:
             return ev;
     }
