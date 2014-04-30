@@ -47,13 +47,11 @@ function compute_exposure(luminosity, iso) {
 
 function compute_aperture(exposure, shutter) {
     //aperture = sqrt( 2^EV * shutter )
-    console.log("f: " + exposure);
     return math.sqrt(math.pow(2, exposure) * shutter);
 }
 
 function compute_shutter(exposure, aperture) {
     //shutter = ( aperture^2 ) / ( 2^EV )
-    console.log("s: " + exposure);
     return ( math.pow(aperture, 2) / math.pow(2, exposure) );
 }
 
@@ -67,6 +65,7 @@ rest.getJSON(options, function(result, status_code) {
     var aperture = 2;
     var lum = result.luminosity[0].value;
     var latest = result.luminosity[0].timestamp;
+    var computations = [];
     math = mathjs();
 
     for (i=0; i < result.luminosity.length; i++) {
@@ -82,7 +81,9 @@ rest.getJSON(options, function(result, status_code) {
     ap = compute_aperture(ev, ss);
     ss = compute_shutter(ev, ap);
 
-    console.log(result);
+    computations.push({lumens: lum, iso: iso, exposure: ev, aperture: ap, shutter: ss});
+
+    //console.log(result);
     console.log("lumens: " + lum);
     console.log("iso: " + iso);
     console.log("exposure value: " + ev);
@@ -90,7 +91,7 @@ rest.getJSON(options, function(result, status_code) {
     console.log("shutter speed: " + ss);
 
 	// export object to be used in other files 
-	exports.return_json = function(onResult) {
-		onResult(lum);
+	exports.return_results = function(onResult) {
+        onResult(result, computations);
 	}
 });
