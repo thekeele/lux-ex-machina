@@ -6,15 +6,20 @@
 $(document).ready(function() {
   /* Typical one-half-stop f-number scale */
   var fRange = [0.70, 0.84, 1.0, 1.2, 1.4, 1.7, 2, 2.4, 2.8, 3.3, 4, 4.8, 5.6, 6.7, 8, 9.5, 11, 13, 16, 19, 22, 27, 32];
+  var aperture = $('#f_amount').data('aperture'); 
+  var shutter = $('#s_amount').data('shutter'); 
 
   /* aperture slider */
-  $( "#f_slider" ).slider({ 
+  $( "#f_slider" ).slider({
     animate: "slow", // or "fast"
     max: fRange.length - 1,
     min: 0,
-    value: 7,
+    create: function(event, ui) {
+      var position = fRange.indexOf(aperture);
+      $('#f_slider').slider("option", "value", position);
+    },
     slide: function(event, ui) {                        
-      $("#f_amount").val('f/' + fRange[ui.value]);                      
+      $("#f_amount").val('f/' + fRange[ui.value]);
     } 
   });
 
@@ -27,7 +32,10 @@ $(document).ready(function() {
     animate: "slow", // or "fast"
     max: sRange.length - 1,
     min: 0,
-    value: 3,
+    create: function(event, ui) {
+      var position = sRange.indexOf(shutter);
+      $('#s_slider').slider("option", "value", position);
+    },
     slide: function(event, ui) {                    
       $("#s_amount").val(sRangeStr[ui.value] + ' s');           
     }
