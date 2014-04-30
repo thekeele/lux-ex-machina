@@ -14,7 +14,7 @@ var express = require('express')
 /* Create App */
 var app = express();
 
-app.set('port', process.env.PORT || 42424);
+app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 //app.use(express.favicon());
@@ -36,5 +36,5 @@ app.get('/lux', lux.findAll);
 
 /* Create HTTP Server and Listen on a Port */
 http.createServer(app).listen(app.get('port'), function(){
-	console.log('Express server listening on port ' + app.get('port'));
+	console.log('Node server lending an ear on port ' + app.get('port'));
 });
