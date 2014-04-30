@@ -7,7 +7,11 @@ $(document).ready(function() {
   /* Typical one-half-stop f-number scale */
   var fRange = [0.70, 0.84, 1.0, 1.2, 1.4, 1.7, 2, 2.4, 2.8, 3.3, 4, 4.8, 5.6, 6.7, 8, 9.5, 11, 13, 16, 19, 22, 27, 32];
   var aperture = $('#f_amount').data('aperture'); 
-  var shutter = $('#s_amount').data('shutter'); 
+  var shutter = $('#s_amount').data('shutter');
+  var iso = $('#iso_select').data('iso');
+
+  /* iso value */
+  $('#iso_select').val(iso);
 
   /* aperture slider */
   $( "#f_slider" ).slider({
