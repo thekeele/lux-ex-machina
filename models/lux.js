@@ -9,12 +9,12 @@ var rest = require('../lib/rest')
 
 /* HTTP Options */
 var options = {
-    //hostname: 'racer.soic.indiana.edu', //production
-    hostname: 'silo.soic.indiana.edu', //dev
-    //port: 42424, //production
-    port: 14226, //dev
-    //path: '/lux', //production
-    path: '/example_json/lux.json',
+    hostname: 'racer.soic.indiana.edu', //production
+    //hostname: 'silo.soic.indiana.edu', //dev
+    port: 42424, //production
+    //port: 14226, //dev
+    path: '/lux', //production
+    //path: '/example_json/lux.json',
     method: 'GET',
     headers: {
         'content-type': 'application/json',
@@ -75,7 +75,6 @@ rest.getJSON(options, function(result, status_code) {
         }
     }
 
-    lum = 80;
     ev = compute_exposure(lum, iso);
     ss = compute_shutter(ev, aperture); //initial guess for aperture
     ap = compute_aperture(ev, ss);
@@ -83,7 +82,7 @@ rest.getJSON(options, function(result, status_code) {
 
     computations.push({lumens: lum, iso: iso, exposure: ev, aperture: ap, shutter: ss});
 
-    //console.log(result);
+    console.log(result);
     console.log("lumens: " + lum);
     console.log("iso: " + iso);
     console.log("exposure value: " + ev);
