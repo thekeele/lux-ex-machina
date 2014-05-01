@@ -15,7 +15,7 @@
 	rest.getJSON(lux.options, function(result, status_code) {
 		console.log("lux rest call");
 		var i, ev, ap, ss;
-		var iso = 400; //base iso value
+		var iso = 100; //base iso value
 		var aperture = 2; //initial guess for aperture
 		var lum = result.luminosity[0].value;
 		var latest = result.luminosity[0].timestamp;
@@ -32,8 +32,6 @@
 		ev = lux.compute_exposure(lum, iso);
 	    ss = lux.compute_shutter(ev, aperture);
 	    ap = lux.compute_aperture(ev, ss);
-	    //ss = 0.125;
-	    //ap = 2;
 
 	    computations.push({lumens: lum, iso: iso, exposure: ev, aperture: ap, shutter: ss});
 
@@ -44,9 +42,8 @@
 	    console.log("aperture: " + ap);
 	    console.log("shutter speed: " + ss);
 
-	 	// agreed standards for shutter speeds 
-		var sRange = [1/1000, 1/500, 1/250, 1/125, 1/60, 1/32, 1/15, 1/8, 1/4, 1/2, 1];
-		var sRangeStr = ['1/1000', '1/500', '1/250', '1/125', '1/60', '1/32', '1/15', '1/8', '1/4', '1/2', '1'];
+		var sRange = [960, 480, 240, 120, 60, 30, 15, 8, 4, 2, 1, 1/2, 1/4, 1/8, 1/15, 1/30, 1/60, 1/125, 1/250, 1/500, 1/1000, 1/2000, 1/4000, 1/8000, 1/15000, 1/30000, 1/60000];
+ 		var sRangeStr = ['960', '480', '240', '120', '60', '30', '15', '8', '4', '2', '1', '1/2', '1/4', '1/8', '1/15', '1/30', '1/60', '1/125', '1/250', '1/500', '1/1000', '1/2000', '1/4000', '1/8000', '1/15000', '1/30000', '1/60000'];
 		var shutterStr = sRangeStr[sRange.indexOf(computations[0].shutter)];
 		console.log('num: ' + computations[0].shutter);
 		console.log('str: ' + shutterStr);
