@@ -27,14 +27,14 @@ block content
             i(id="f_icon" class="fa fa-unlock-alt fa-2x")
         td
           div#f_slider
-          input(type="text" id="f_amount" class="form-control" placeholder=("Recommended Aperture f/" + aperture) readonly="true" data-aperture=aperture)
+          input(type="text" id="f_amount" class="form-control" placeholder=("Recommending f/" + aperture) readonly="true" data-aperture=aperture)
       tr(class="space-under")
         td(class="butt-pad")
           button(type="button" class="btn btn-default" id="s_lock")
             i(id="s_icon" class="fa fa-unlock-alt fa-2x")
         td
           div#s_slider
-          input(type="text" id="s_amount" class="form-control" placeholder=("Recommended Shutter Speed " + shutterStr) readonly="true" data-shutter=shutter)
+          input(type="text" id="s_amount" class="form-control" placeholder=("Recommending " + shutterStr + "s") readonly="true" data-shutter=shutter)
       tr
     input.btn(type="button", class="btn btn-default btn-lg btn-block", value="Capture EXIF")
   div.jumbotron(id="custom-jumbo")

@@ -4,7 +4,7 @@
  */
 
 /* Include Modules */
-var lux = require('../models/lux');
+var lux = require('../lib/lux');
 
 /* GET lux page */
 exports.findAll = function(req, res) {

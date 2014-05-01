@@ -4,6 +4,134 @@
 		"selected_items":
 		[
 			[
+				"req",
+				"require"
+			],
+			[
+				"lux",
+				"lux_options"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"re",
+				"routes"
+			],
+			[
+				"iso",
+				"iso_select"
+			],
+			[
+				"shu",
+				"shutterStr"
+			],
+			[
+				"sR",
+				"sRangeStr"
+			],
+			[
+				"i",
+				"iso"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"f_",
+				"f_amount"
+			],
+			[
+				"com",
+				"computations"
+			],
+			[
+				"co",
+				"console"
+			],
+			[
+				"host",
+				"hostname"
+			],
+			[
+				"aper",
+				"aperture"
+			],
+			[
+				"ap",
+				"aperature"
+			],
+			[
+				"lu",
+				"lum"
+			],
+			[
+				"expo",
+				"exposure_value"
+			],
+			[
+				"ra",
+				"raw_ev"
+			],
+			[
+				"lum",
+				"luminosity"
+			],
+			[
+				"r",
+				"raw_ev"
+			],
+			[
+				"tim",
+				"timestamp"
+			],
+			[
+				"te",
+				"timestamp"
+			],
+			[
+				"l",
+				"luminosity"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"pad",
+				"padding-right"
+			],
+			[
+				"de",
+				"denominator"
+			],
+			[
+				"nu",
+				"numerator"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"st",
+				"status_code"
+			],
+			[
+				"json",
+				"json_object"
+			],
+			[
+				"pro",
+				"protocol"
+			],
+			[
+				"c",
+				"chunk"
+			],
+			[
 				"en",
 				"enable"
 			],
@@ -14,10 +142,6 @@
 			[
 				"s",
 				"stripped"
-			],
-			[
-				"re",
-				"resultA"
 			],
 			[
 				"for",
@@ -44,10 +168,6 @@
 				"start_helm"
 			],
 			[
-				"st",
-				"start_helm"
-			],
-			[
 				"bl",
 				"blipp2"
 			],
@@ -58,10 +178,6 @@
 			[
 				"met",
 				"metadata_url"
-			],
-			[
-				"pro",
-				"process_metadata"
 			],
 			[
 				"d",
@@ -78,10 +194,6 @@
 			[
 				"str",
 				"stringify"
-			],
-			[
-				"json",
-				"json_response"
 			],
 			[
 				"erro",
@@ -106,10 +218,6 @@
 			[
 				"ag",
 				"aggregate"
-			],
-			[
-				"con",
-				"conf_file"
 			],
 			[
 				"agg",
@@ -184,10 +292,6 @@
 				"ajaxReq"
 			],
 			[
-				"padd",
-				"padding"
-			],
-			[
 				"back",
 				"background-color"
 			],
@@ -216,26 +320,18 @@
 	"buffers":
 	[
 		{
-			"file": "app.js",
+			"file": "lib/lux.js",
 			"settings":
 			{
-				"buffer_size": 861,
+				"buffer_size": 953,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "views/layout.jade",
+			"file": "routes/index.js",
 			"settings":
 			{
-				"buffer_size": 825,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/MarksMacMachine/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-			"settings":
-			{
-				"buffer_size": 519,
+				"buffer_size": 2242,
 				"line_ending": "Unix"
 			}
 		}
@@ -246,6 +342,18 @@
 		"height": 375.0,
 		"selected_items":
 		[
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"jade",
+				"Set Syntax: Jade"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
 			[
 				"Packa",
 				"Package Control: Remove Package"
@@ -272,10 +380,6 @@
 			],
 			[
 				"Pack ",
-				"Package Control: Install Package"
-			],
-			[
-				"pack",
 				"Package Control: Install Package"
 			],
 			[
@@ -329,13 +433,61 @@
 	},
 	"file_history":
 	[
-		"/Users/MarksMacMachine/college/digital_systems/project/lux-ex-machina/lux.sublime-project",
-		"/Users/MarksMacMachine/college/digital_systems/project/lux-ex-machina/public/javascripts/help.js",
-		"/Users/MarksMacMachine/college/digital_systems/project/lux-ex-machina/views/layout.jade",
+		"/Users/MarksMacMachine/college/digital_systems/project/lux-ex-machina/routes/gps.js",
+		"/Users/MarksMacMachine/college/digital_systems/project/lux-ex-machina/routes/lux.js",
+		"/Users/MarksMacMachine/college/digital_systems/project/lux-ex-machina/lib/rest.js",
+		"/Users/MarksMacMachine/college/digital_systems/project/lux-ex-machina/lib/gps.js",
+		"/Users/MarksMacMachine/college/digital_systems/project/lux-ex-machina/app.js",
+		"/Users/MarksMacMachine/college/digital_systems/project/lux-ex-machina/routes/index.js",
+		"/Users/MarksMacMachine/college/digital_systems/project/lux-ex-machina/models/lux.js",
+		"/Users/MarksMacMachine/college/digital_systems/project/lux-ex-machina/models/gps.js",
+		"/Users/MarksMacMachine/college/digital_systems/project/lux-ex-machina/npm-debug.log",
 		"/Users/MarksMacMachine/college/digital_systems/project/lux-ex-machina/views/index.jade",
 		"/Users/MarksMacMachine/college/digital_systems/project/lux-ex-machina/public/javascripts/slider.js",
-		"/Users/MarksMacMachine/.ssh/known_hosts",
+		"/Users/MarksMacMachine/college/digital_systems/project/lux-ex-machina/public/javascripts/help.js",
+		"/Users/MarksMacMachine/college/digital_systems/project/lux-ex-machina/example_json/lux.json",
+		"/Users/MarksMacMachine/college/digital_systems/project/lux-ex-machina/public/bootstrap/css/bootstrap.min.css",
 		"/Users/MarksMacMachine/college/digital_systems/project/lux-ex-machina/public/stylesheets/style.css",
+		"/Users/MarksMacMachine/college/digital_systems/project/lux-ex-machina/views/layout.jade",
+		"/Users/MarksMacMachine/college/digital_systems/project/lux-ex-machina/example_json/gps.json",
+		"/Users/MarksMacMachine/college/digital_systems/project/lux-ex-machina/package.json",
+		"/Users/MarksMacMachine/research/front_end/measurements/public/system/views/index.html",
+		"/Users/MarksMacMachine/research/front_end/measurements/server/controllers/index.js",
+		"/Users/MarksMacMachine/research/front_end/measurements/server/routes/index.js",
+		"/Users/MarksMacMachine/research/front_end/measurements/public/system/views/home.html",
+		"/Users/MarksMacMachine/research/front_end/measurements/server/controllers/users.js",
+		"/Users/MarksMacMachine/research/front_end/measurements/server/routes/menus.js",
+		"/Users/MarksMacMachine/research/front_end/measurements/public/system/routes/system.js",
+		"/Users/MarksMacMachine/research/front_end/measurements/public/system/views/header.html",
+		"/Users/MarksMacMachine/research/front_end/measurements/server/views/layouts/default.html",
+		"/Users/MarksMacMachine/research/front_end/measurements/server/views/includes/head.html",
+		"/Users/MarksMacMachine/research/front_end/measurements/server/routes/users.js",
+		"/Users/MarksMacMachine/research/front_end/measurements/public/auth/views/index.html",
+		"/Users/MarksMacMachine/research/front_end/measurements/public/auth/views/register.html",
+		"/Users/MarksMacMachine/research/front_end/measurements/public/auth/views/login.html",
+		"/Users/MarksMacMachine/research/front_end/measurements/server/views/includes/foot.html",
+		"/Users/MarksMacMachine/research/front_end/measurements/server.js",
+		"/Users/MarksMacMachine/research/front_end/measurements/server/views/index.html",
+		"/Users/MarksMacMachine/research/front_end/measurements/public/robots.txt",
+		"/Users/MarksMacMachine/research/front_end/measurements/public/init.js",
+		"/Users/MarksMacMachine/research/front_end/measurements/public/auth/auth.js",
+		"/Users/MarksMacMachine/research/front_end/measurements/public/humans.txt",
+		"/Users/MarksMacMachine/research/front_end/measurements/package.json",
+		"/Users/MarksMacMachine/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/usr/local/bin/gcf-2.4/src/omnilib/chhandler.py",
+		"/usr/local/bin/gcf-2.4/src/omnilib/frameworks/framework_sfa.py",
+		"/usr/local/bin/gcf-2.4/src/omnilib/amhandler.py",
+		"/Users/MarksMacMachine/research/rspecs/new_choicenet-ky-ig.rspec",
+		"/usr/local/bin/gcf-2.4/src/omnilib/util/handler_utils.py",
+		"/usr/local/bin/gcf-2.4/src/omnilib/xmlrpc/client.py",
+		"/usr/local/bin/gcf-2.4/src/omnilib/handler.py",
+		"/usr/local/bin/gcf-2.4/src/omni.py",
+		"/Users/MarksMacMachine/college/digital_systems/DS-SPRING-2014/project-reports/Report4/report4.tex",
+		"/Users/MarksMacMachine/college/digital_systems/project/lux-ex-machina/node_modules/express/node_modules/connect/node_modules/multiparty/test/fixture/http/no-filename/generic.http",
+		"/Users/MarksMacMachine/college/digital_systems/project/lux-ex-machina/libs/rest.js",
+		"/Users/MarksMacMachine/college/digital_systems/project/lux-ex-machina/routes/lumosity.js",
+		"/Users/MarksMacMachine/college/digital_systems/project/lux-ex-machina/lux.sublime-project",
+		"/Users/MarksMacMachine/.ssh/known_hosts",
 		"/Users/MarksMacMachine/college/digital_systems/project/test.html",
 		"/Users/MarksMacMachine/research/angular/hello/app/views/main.html",
 		"/Users/MarksMacMachine/research/angular/hello/test/spec/controllers/main.js",
@@ -347,9 +499,6 @@
 		"/Users/MarksMacMachine/research/angular/hello/.bowerrc",
 		"/Users/MarksMacMachine/research/angular/hello/app/views/main-default.html",
 		"/Users/MarksMacMachine/learning/learn_c/ex1.c",
-		"/Users/MarksMacMachine/college/digital_systems/project/lux-ex-machina/routes/index.js",
-		"/Users/MarksMacMachine/college/digital_systems/project/lux-ex-machina/package.json",
-		"/Users/MarksMacMachine/college/digital_systems/project/lux-ex-machina/app.js",
 		"/Users/MarksMacMachine/Desktop/example.json",
 		"/Users/MarksMacMachine/college/digital_systems/DS-SPRING-2014/project-reports/Report2/report2.tex",
 		"/Users/MarksMacMachine/college/digital_systems/fuck/lux-ex-machina/package.json",
@@ -411,62 +560,19 @@
 		"/Users/MarksMacMachine/node.js/hello/package.json",
 		"/Users/MarksMacMachine/node.js/package.json",
 		"/Users/MarksMacMachine/rails_projects/talkbox/talkbox.rb",
-		"/Users/MarksMacMachine/college/digital_systems/DS-SPRING-2014/lab6/design/design6.tex",
-		"/Users/MarksMacMachine/Desktop/design6.tex",
-		"/Volumes/NO NAME/LOG.TXT",
-		"/Users/MarksMacMachine/college/digital_systems/DS-SPRING-2014/lab6/design/design6-backup.pdf",
-		"/Users/MarksMacMachine/college/digital_systems/DS-SPRING-2014/lab6/design/design6-new.tex",
-		"/Users/MarksMacMachine/college/digital_systems/DS-SPRING-2014/lab6/design/Makefile",
-		"/Users/MarksMacMachine/research/rspecs/rspec-utah-geniracks-net.xml",
-		"/Users/MarksMacMachine/Downloads/xinu-project-3/Futures1Design.txt",
-		"/Users/MarksMacMachine/Downloads/xinu-project-3/future.c",
-		"/Users/MarksMacMachine/Downloads/xinu-project-3/future.h",
-		"/Users/MarksMacMachine/Downloads/xinu-project-3/output.txt",
-		"/Users/MarksMacMachine/Downloads/xinu-project-3/README",
-		"/Users/MarksMacMachine/Downloads/xinu-project-3/xsh_future.c",
-		"/Users/MarksMacMachine/Downloads/xinu-project-3/shell.h",
-		"/Users/MarksMacMachine/Downloads/xinu-project-3/shell.c",
-		"/Users/MarksMacMachine/web/web_lair/css/style.css",
-		"/Users/MarksMacMachine/web/web_lair/index.html",
-		"/Users/MarksMacMachine/web/web_lair/css/style",
-		"/Users/MarksMacMachine/web/web_lair/js/jquery.anystretch.min.js",
-		"/Users/MarksMacMachine/college/digital_systems/p442-submissions/lab5/report.txt",
-		"/Users/MarksMacMachine/college/digital_systems/DS-SPRING-2014/lab5/design/design5.tex",
-		"/Users/MarksMacMachine/college/machine_learning/latex/homework1/homework1.tex",
-		"/Users/MarksMacMachine/Desktop/bullshit.json",
-		"/Users/MarksMacMachine/Desktop/psconfig-test2-manifest.rspec",
-		"/Users/MarksMacMachine/Desktop/log.py",
-		"/Users/MarksMacMachine/Desktop/test.py",
-		"/Users/MarksMacMachine/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
-		"/Users/MarksMacMachine/web/tattoo/tattoo.rb",
-		"/Users/MarksMacMachine/research/rspecs/ubuntu_12.04_gemini_mp.xml.sha1",
-		"/Users/MarksMacMachine/research/rspecs/test-image.rspec",
-		"/Users/MarksMacMachine/research/test/client.py",
-		"/Users/MarksMacMachine/Desktop/psconfig-2-manifest.rspec",
-		"/Users/MarksMacMachine/Downloads/ubuntu_12.04_gemini_mp.xml.sha1",
-		"/Users/MarksMacMachine/Desktop/test-image.rspec.xml",
-		"/Users/MarksMacMachine/Desktop/ubuntu_12.04_gemini_mp.xml",
-		"/Users/MarksMacMachine/Desktop/test-image-ubuntu.xml",
-		"/Users/MarksMacMachine/research/GEMINI/contrib/lamp/perfSONAR_PS-Toolkit/web/root/gui/services/index.cgi",
-		"/Users/MarksMacMachine/research/GEMINI/contrib/lamp/perfSONAR_PS-Toolkit/web/root/index.cgi",
-		"/Users/MarksMacMachine/research/GEMINI/tools/pulling/am_pull.py",
-		"/Users/MarksMacMachine/research/GEMINI/tools/pulling/agg_pull.py",
-		"/Users/MarksMacMachine/research/GEMINI/tools/pulling/conf.auto",
-		"/Users/MarksMacMachine/research/GEMINI/tools/pulling/conf.all",
-		"/Users/MarksMacMachine/research/unisencoder/unisencoder/decoder.py",
-		"/Users/MarksMacMachine/rspec-geni-kettering-edu.xml",
-		"/Users/MarksMacMachine/web/index.html",
-		"/Users/MarksMacMachine/college/digital_systems/DS-SPRING-2014/lab5/design/.gitignore"
+		"/Users/MarksMacMachine/college/digital_systems/DS-SPRING-2014/lab6/design/design6.tex"
 	],
 	"find":
 	{
-		"height": 30.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
 		"height": 99.0,
 		"where_history":
 		[
+			"rest.js",
+			"gps.json",
 			""
 		]
 	},
@@ -475,6 +581,22 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"exports",
+			"json_object",
+			"butt_pad",
+			"spaceUnder",
+			"list_myslices",
+			"createslice",
+			"create",
+			"pc4",
+			"CallHandler",
+			"API_call",
+			"call(",
+			"API_call",
+			"output",
+			"\"",
+			"prot",
+			"luminosity",
 			"slow",
 			"function",
 			"4000",
@@ -586,20 +708,7 @@
 			"name",
 			"renci",
 			"common",
-			"name",
-			"ip address",
-			"scount",
-			"sstate",
-			"sement",
-			"make",
-			"addBlogEntry",
-			"viewrandom",
-			"searchtext",
-			"search",
-			"pagewrap",
-			"sidebar",
-			"pagewrap",
-			"sidebar"
+			"name"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -607,6 +716,13 @@
 		"regex": false,
 		"replace_history":
 		[
+			"butt-pad",
+			"space-under",
+			"pc5",
+			"result",
+			"'",
+			"protocol",
+			"gps",
 			"",
 			"common name",
 			"fcount",
@@ -625,24 +741,24 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app.js",
+					"file": "lib/lux.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 861,
+						"buffer_size": 953,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								861,
-								861
+								98,
+								98
 							]
 						],
 						"settings":
@@ -650,77 +766,48 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
-								"bh_double_quote_close"
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close"
 							],
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "views/layout.jade",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 825,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								600,
-								600
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
@@ -732,20 +819,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "/Users/MarksMacMachine/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+					"buffer": 1,
+					"file": "routes/index.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 519,
+						"buffer_size": 2242,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								126,
-								126
+								1274,
+								1274
 							]
 						],
 						"settings":
@@ -753,10 +840,6 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
@@ -765,10 +848,6 @@
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
@@ -777,10 +856,6 @@
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
@@ -789,19 +864,30 @@
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
-								"bh_double_quote_close"
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close"
 							],
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 613.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -849,7 +935,7 @@
 	"project": "lux.sublime-project",
 	"replace":
 	{
-		"height": 56.0
+		"height": 70.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -883,7 +969,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 283.0,
+	"side_bar_width": 189.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
