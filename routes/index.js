@@ -15,6 +15,7 @@
 	/* GET JSON LUX Object */
 	rest.getJSON(lux.options, function(result, status_code) {
 		console.log("lux rest call");
+		console.log(result);
 		var i, ev, ap, ss;
 		var iso = 100; //base iso value
 		var gps_data;
@@ -42,14 +43,13 @@
 
 	    computations.push({lumens: lum, iso: iso, exposure: ev, aperture: ap, shutter: sRange[ss]});
 
-	    console.log(result);
 	    console.log("lumens: " + lum);
 	    console.log("iso: " + iso);
 	    console.log("exposure value: " + ev);
 	    console.log("aperture: " + ap);
 	    console.log("shutter speed: " + sRange[ss]);
 		shutterStr = sRangeStr[sRange.indexOf(computations[0].shutter)];
-		console.log('sStr: ' + shutterStr);
+		console.log('shutter string: ' + shutterStr);
 
 		/* GET JSON GPS Object */
 		rest.getJSON(gps.options, function(result, status_code) {
@@ -77,14 +77,14 @@
 			}
 
 			// send mail with defined transport object
-			transport.sendMail(mailOptions, function(error, response){
+			/*transport.sendMail(mailOptions, function(error, response){
 			    if(error) {
 			        console.log(error);
 			    } else {
 			        console.log("Message sent: " + response.message);
 			    }
 			    transport.close(); // shut down the connection pool, no more messages
-			});
+			});*/
 
 			res.render('index', { title: 'Lux Ex Machina', aperture: computations[0].aperture, shutterStr: shutterStr, shutter: computations[0].shutter, iso: 1, latitude: gps_data.latitude, longitude: gps_data.longitude, lumens: lum, exposure: ev});
 		});

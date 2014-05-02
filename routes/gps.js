@@ -8,8 +8,6 @@ var gps = require('../lib/gps');
 
 /* GET gps page */
 exports.findAll = function(req, res) {
-	
-	gps.return_json(function(result) {
-        res.send(result);  
-    });
+	/* render json objects */
+	res.send(gps.return_json);
 };
