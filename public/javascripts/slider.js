@@ -11,6 +11,7 @@ $(document).ready(function() {
   var aperture = $('#f_amount').data('aperture'); 
   var shutter = $('#s_amount').data('shutter');
   var iso = $('#iso_select').data('iso');
+  var isoSelect = $('#iso_select').val();
   var fPosition;
   var sPosition;
   var fChange = false;
@@ -18,6 +19,36 @@ $(document).ready(function() {
 
   /* iso value */
   $('#iso_select').val(iso);
+  $('#iso_select').change(function() {
+    var step;
+    var selected = $('#iso_select').val();
+    var value = $("#s_slider").slider("option", "value");
+
+    if(isoSelect < selected) {
+      //add
+      sChange = false;
+      fChange = true;
+      step = selected - isoSelect;
+      value = value + step;
+      $("#s_slider").slider("option", "value", value);
+      $("#s_amount").val(sRangeStr[value] + ' s');
+    } else if(isoSelect > selected) {
+      //subtract
+      //alert("subtract");
+      sChange = false;
+      fChange = true;
+      step = isoSelect - selected;
+      //alert("step: " + step);
+      value = value - step;
+      //alert("value: " + value);
+      $("#s_slider").slider("option", "value", value);
+      $("#s_amount").val(sRangeStr[value] + ' s');
+    } else {
+      //do nothing
+      console.log("do nothing");
+    }
+    isoSelect = selected;
+  });
 
   /* aperture slider */
   $( "#f_slider" ).slider({
@@ -57,7 +88,6 @@ $(document).ready(function() {
         {
           console.log("equal");
         }
-
         fPosition = value;
       }
     }

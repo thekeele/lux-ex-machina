@@ -46,6 +46,6 @@
 		var shutterStr = sRangeStr[sRange.indexOf(computations[0].shutter)];
 		console.log('sStr: ' + shutterStr);
 
-		res.render('index', { title: 'Lux Ex Machina', aperture: computations[0].aperture, shutterStr: shutterStr, shutter: computations[0].shutter, iso: computations[0].iso });
+		res.render('index', { title: 'Lux Ex Machina', aperture: computations[0].aperture, shutterStr: shutterStr, shutter: computations[0].shutter, iso: 1 });
 	});
 };
