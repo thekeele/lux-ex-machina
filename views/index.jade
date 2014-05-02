@@ -36,6 +36,32 @@ block content
           div#s_slider
           input(type="text" id="s_amount" class="form-control" placeholder=("Recommending " + shutterStr + "s") readonly="true" data-shutter=shutter)
       tr
-    input.btn(type="button", class="btn btn-default btn-lg btn-block", value="Capture EXIF")
+    input.btn(id="capture_exif" type="button", class="btn btn-default btn-lg btn-block", value="Capture EXIF")
+    div(id="exif")
+      table
+        colgroup
+          col(span="1" style="width: 10%;")
+          col(span="1" style="width: 10%;")
+          col(span="1" style="width: 10%;")
+          col(span="1" style="width: 10%;")
+          col(span="1" style="width: 10%;")
+          col(span="1" style="width: 10%;")
+          col(span="1" style="width: 10%;")
+        tr
+          th Lumens
+          th Exposure Value
+          th ISO
+          th Aperture
+          th Shutter Speed
+          th Longitude
+          th Latitude
+        tr
+          td=lumens
+          td=exposure
+          td=iso_exif
+          td=aperture
+          td=shutterStr
+          td=longitude
+          td=latitude
   div.jumbotron(id="custom-jumbo")
     p.small.text-center JRAK CO. 2014

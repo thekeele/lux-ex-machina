@@ -34,13 +34,10 @@ $(document).ready(function() {
       $("#s_amount").val(sRangeStr[value] + ' s');
     } else if(isoSelect > selected) {
       //subtract
-      //alert("subtract");
       sChange = false;
       fChange = true;
       step = isoSelect - selected;
-      //alert("step: " + step);
       value = value - step;
-      //alert("value: " + value);
       $("#s_slider").slider("option", "value", value);
       $("#s_amount").val(sRangeStr[value] + ' s');
     } else {
