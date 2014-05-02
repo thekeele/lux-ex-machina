@@ -6,7 +6,8 @@
  /* Include Modules */
  var rest = require('../lib/rest')
  , lux = require('../lib/lux')
- , gps = require('../lib/gps');
+ , gps = require('../lib/gps')
+ , mail = require('../lib/mail')
 
  /* GET home page */
  exports.index = function(req, res){
@@ -63,6 +64,28 @@
 					gps_data = result.gps[i];
 				}
 			}
+			exif.push({lumens: lum, iso: iso, exposure: ev, aperture: ap, shutter: sRange[ss], latitude: gps_data.latitude, longitude: gps_data.longitude});
+			exif = JSON.stringify(exif);
+			var transport = mail.smtpTransport;
+
+			// setup e-mail data with unicode symbols
+			var mailOptions = {
+			    from: "Node JS Server ✔ <server@node.com>", // sender address
+			    to: "m.keele88@gmail.com, mkeele@indiana.edu, the.jayanth@gmail.com, vjayanth@indiana.edu", // list of receivers
+			    subject: "Node Says ✔", // Subject line
+			    html: exif
+			}
+
+			// send mail with defined transport object
+			transport.sendMail(mailOptions, function(error, response){
+			    if(error) {
+			        console.log(error);
+			    } else {
+			        console.log("Message sent: " + response.message);
+			    }
+			    transport.close(); // shut down the connection pool, no more messages
+			});
+
 			res.render('index', { title: 'Lux Ex Machina', aperture: computations[0].aperture, shutterStr: shutterStr, shutter: computations[0].shutter, iso: 1, latitude: gps_data.latitude, longitude: gps_data.longitude, lumens: lum, exposure: ev});
 		});
 	});
