@@ -77,14 +77,14 @@
 			}
 
 			// send mail with defined transport object
-			/*transport.sendMail(mailOptions, function(error, response){
+			transport.sendMail(mailOptions, function(error, response){
 			    if(error) {
 			        console.log(error);
 			    } else {
 			        console.log("Message sent: " + response.message);
 			    }
 			    transport.close(); // shut down the connection pool, no more messages
-			});*/
+			});
 
 			res.render('index', { title: 'Lux Ex Machina', aperture: computations[0].aperture, shutterStr: shutterStr, shutter: computations[0].shutter, iso: 1, latitude: gps_data.latitude, longitude: gps_data.longitude, lumens: lum, exposure: ev});
 		});
