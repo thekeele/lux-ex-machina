@@ -16,7 +16,6 @@
 		console.log("lux rest call");
 		var i, ev, ap, ss;
 		var iso = 100; //base iso value
-		var iso_exif = 100; //base iso value
 		var gps_data;
 	 	var computations = [];
 	 	var exif = [];
@@ -64,7 +63,7 @@
 					gps_data = result.gps[i];
 				}
 			}
-			res.render('index', { title: 'Lux Ex Machina', aperture: computations[0].aperture, shutterStr: shutterStr, shutter: computations[0].shutter, iso: 1, iso_exif: iso_exif, latitude: gps_data.latitude, longitude: gps_data.longitude, lumens: lum, exposure: ev});
+			res.render('index', { title: 'Lux Ex Machina', aperture: computations[0].aperture, shutterStr: shutterStr, shutter: computations[0].shutter, iso: 1, latitude: gps_data.latitude, longitude: gps_data.longitude, lumens: lum, exposure: ev});
 		});
 	});
 };
