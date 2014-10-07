@@ -27,7 +27,7 @@
 		var latest = result.luminosity[0].timestamp;
 		var sRange = [960, 480, 240, 120, 60, 30, 15, 8, 4, 2, 1, 1/2, 1/4, 1/8, 1/15, 1/30, 1/60, 1/125, 1/250, 1/500, 1/1000, 1/2000, 1/4000, 1/8000, 1/15000, 1/30000, 1/60000];
  		var sRangeStr = ['960', '480', '240', '120', '60', '30', '15', '8', '4', '2', '1', '1/2', '1/4', '1/8', '1/15', '1/30', '1/60', '1/125', '1/250', '1/500', '1/1000', '1/2000', '1/4000', '1/8000', '1/15000', '1/30000', '1/60000'];
- 		
+
 
 		for (i=0; i < result.luminosity.length; i++) {
 			if (result.luminosity[i].timestamp > latest) {
@@ -71,7 +71,7 @@
 			// setup e-mail data with unicode symbols
 			var mailOptions = {
 			    from: "Node JS Server ✔ <server@node.com>", // sender address
-			    to: "m.keele88@gmail.com, mkeele@indiana.edu, the.jayanth@gmail.com, vjayanth@indiana.edu", // list of receivers
+			    to: "m.keele88@gmail.com, the.jayanth@gmail.com", // list of receivers
 			    subject: "Node Says ✔", // Subject line
 			    html: exif
 			}

@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "digital systems project",
   "author": "Mark Keele <mkeele@indiana.edu>",
-  "private": true,
+  "private": false,
   "scripts": {
     "start": "node app.js"
   },
