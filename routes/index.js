@@ -71,7 +71,7 @@
 			// setup e-mail data with unicode symbols
 			var mailOptions = {
 			    from: "Node JS Server ✔ <server@node.com>", // sender address
-			    to: "m.keele88@gmail.com, the.jayanth@gmail.com", // list of receivers
+			    to: "m.keele88@gmail.com", // list of receivers
 			    subject: "Node Says ✔", // Subject line
 			    html: exif
 			}
