@@ -7,7 +7,7 @@
  var rest = require('../lib/rest')
  , lumens = require('../lib/lumens')
  , gps = require('../lib/gps')
- , mail = require('../lib/mail')
+ , mail = require('../lib/mail');
 
  /* GET home page */
  exports.index = function(req, res){
