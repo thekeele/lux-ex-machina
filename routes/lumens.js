@@ -1,13 +1,13 @@
 /*
  * Routes
- * lux.js
+ * lumens.js
  */
 
 /* Include Modules */
-var lux = require('../lib/lux');
+var lumens = require('../lib/lumens');
 
-/* GET lux page */
+/* GET lumens page */
 exports.findAll = function(req, res) {
     /* render json objects */
-	res.send(lux.return_json);
+	res.send(lumens.return_json);
 };

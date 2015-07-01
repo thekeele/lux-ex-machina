@@ -5,7 +5,7 @@
 
  /* Include Modules */
  var rest = require('../lib/rest')
- , lux = require('../lib/lux')
+ , lumens = require('../lib/lumens')
  , gps = require('../lib/gps')
  , mail = require('../lib/mail')
 
@@ -26,9 +26,9 @@
 	    }]
 	};
 
-	/* GET JSON LUX Object */
-	// rest.getJSON(lux.options, function(result, status_code) {
-		console.log("lux rest call");
+	/* GET JSON lumens Object */
+	// rest.getJSON(lumens.options, function(result, status_code) {
+		console.log("lumens rest call");
 		console.log(result);
 		var i, ev, ap, ss;
 		var iso = 100; //base iso value
@@ -51,9 +51,9 @@
 		}
 
 		lum = 700;
-		ev = lux.compute_exposure(lum, iso);
-	    ss = lux.compute_shutter(ev, aperture);  //returns position of element in array
-	    ap = lux.compute_aperture(ev, sRange[ss]);
+		ev = lumens.compute_exposure(lum, iso);
+	    ss = lumens.compute_shutter(ev, aperture);  //returns position of element in array
+	    ap = lumens.compute_aperture(ev, sRange[ss]);
 
 	    computations.push({lumens: lum, iso: iso, exposure: ev, aperture: ap, shutter: sRange[ss]});
 
@@ -118,7 +118,7 @@
 			    transport.close(); // shut down the connection pool, no more messages
 			});
 
-			res.render('index', { title: 'Lux Ex Machina', aperture: computations[0].aperture, shutterStr: shutterStr, shutter: computations[0].shutter, iso: 1, latitude: gps_data.latitude, longitude: gps_data.longitude, lumens: lum, exposure: ev});
+			res.render('index', { title: 'lumens Ex Machina', aperture: computations[0].aperture, shutterStr: shutterStr, shutter: computations[0].shutter, iso: 1, latitude: gps_data.latitude, longitude: gps_data.longitude, lumens: lum, exposure: ev});
 		// });
 	// });
 };
