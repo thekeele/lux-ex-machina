@@ -12,8 +12,22 @@
  /* GET home page */
  exports.index = function(req, res){
 
+ 	var result = {
+	    "luminosity": [
+	    {
+	        "value": "0.31",
+	        "timestamp": "1398107511"
+	    },{
+	        "value": "640",
+	        "timestamp": "1398163230"
+	    },{
+	        "value": "330000",
+	        "timestamp": "1398193250"
+	    }]
+	};
+
 	/* GET JSON LUX Object */
-	rest.getJSON(lux.options, function(result, status_code) {
+	// rest.getJSON(lux.options, function(result, status_code) {
 		console.log("lux rest call");
 		console.log(result);
 		var i, ev, ap, ss;
@@ -52,7 +66,25 @@
 		console.log('shutter string: ' + shutterStr);
 
 		/* GET JSON GPS Object */
-		rest.getJSON(gps.options, function(result, status_code) {
+		// rest.getJSON(gps.options, function(result, status_code) {
+
+		var result = {
+		    "gps": [
+		    {
+		        "latitude": "39.162222",
+		        "longitude": "-86.529167",
+		        "timestamp": "1398113986"
+		    },{
+		        "latitude": "35.0117",
+		        "longitude": "-135.7683",
+		        "timestamp": "1398114108"
+		    },{
+		        "latitude": "34.05",
+		        "longitude": "-118.25",
+		        "timestamp": "1398114170"
+		    }]
+		};
+
 			console.log("gps rest call");
 			console.log(result);
 			var i, gps;
@@ -87,6 +119,6 @@
 			});
 
 			res.render('index', { title: 'Lux Ex Machina', aperture: computations[0].aperture, shutterStr: shutterStr, shutter: computations[0].shutter, iso: 1, latitude: gps_data.latitude, longitude: gps_data.longitude, lumens: lum, exposure: ev});
-		});
-	});
+		// });
+	// });
 };

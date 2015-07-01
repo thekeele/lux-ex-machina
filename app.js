@@ -14,7 +14,8 @@ var express = require('express')
 /* Create App */
 var app = express();
 
-app.set('ip', '10.132.213.230');
+app.set('ip', 'localhost');
+//app.set('ip', '10.132.213.230');
 app.set('port', process.env.PORT || 8003);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
