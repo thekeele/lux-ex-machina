@@ -14,18 +14,18 @@ var express = require('express')
 /* Create App */
 var app = express();
 
-app.set('ip', 'localhost');
-//app.set('ip', '10.132.213.230');
+// app.set('ip', 'localhost');
+app.set('ip', '10.132.213.230');
 app.set('port', process.env.PORT || 8003);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
-app.use(express.favicon(__dirname + '/public/images/favicon.ico'));
+// app.use(express.favicon(__dirname + '/public/images/favicon.ico'));
 app.use(express.logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded());
 app.use(express.methodOverride());
 app.use(app.router);
-app.use(express.static(path.join(__dirname, 'public')));
+// app.use(express.static(path.join(__dirname, 'public')));
 
 if ('development' == app.get('env')) {
 	app.use(express.errorHandler());
