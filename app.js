@@ -14,6 +14,7 @@ var express = require('express')
 /* Create App */
 var app = express();
 
+app.set('ip', '10.132.213.230');
 app.set('port', process.env.PORT || 8003);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
@@ -35,6 +36,6 @@ app.get('/gps', gps.findAll);
 app.get('/lux', lux.findAll);
 
 /* Create HTTP Server and Listen on a Port */
-http.createServer(app).listen(app.get('port'), function(){
-	console.log('Node server lending an ear on port ' + app.get('port'));
+http.createServer(app).listen(app.get('port'), app.get('ip'), function(){
+	console.log('Node server lending an ear on port ' + app.get('port') + ' and IP ' + app.get('ip'));
 });
