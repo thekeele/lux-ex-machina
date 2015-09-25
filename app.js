@@ -14,7 +14,7 @@ var express = require('express')
 /* Create App */
 var app = express();
 
-// app.set('ip', 'localhost');
+//app.set('ip', 'localhost');
 app.set('ip', '10.132.213.230');
 app.set('port', process.env.PORT || 8003);
 app.set('views', path.join(__dirname, 'views'));
@@ -32,9 +32,9 @@ if ('development' == app.get('env')) {
 }
 
 /* All Available Routes */
-app.get('/', routes.index);
-app.get('//gps', gps.findAll);
-app.get('//lumens', lumens.findAll);
+app.get('/lux', routes.index);
+app.get('/lux/gps', gps.findAll);
+app.get('/lux/lumens', lumens.findAll);
 
 /* Create HTTP Server and Listen on a Port */
 http.createServer(app).listen(app.get('port'), app.get('ip'), function(){
