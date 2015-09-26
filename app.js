@@ -36,10 +36,10 @@ if ('development' == app.get('env')) {
 
 /* All Available Routes */
 app.get('/', routes.index);
-app.get('/gps', gps.findAll);
-app.get('/lumens', lumens.findAll);
+app.get('//gps', gps.findAll);
+app.get('//lumens', lumens.findAll);
 
 /* Create HTTP Server and Listen on a Port */
 http.createServer(app).listen(config.luxPort, config.luxHost, function(){
-	console.log('Node server lending an ear on port ' + config.luxPort + ' and IP ' + config.luxHost);
+	console.log('Node ' + app.get('env')  + ' server lending an ear on port ' + config.luxPort + ' and IP ' + config.luxHost);
 });
