@@ -14,29 +14,32 @@ var express = require('express')
 /* Create App */
 var app = express();
 
-//app.set('ip', 'localhost');
-app.set('ip', '10.132.213.230');
-app.set('port', process.env.PORT || 8003);
+/* Load configuration file */
+var config = require('./config.json')[app.get('env')];
+
+app.set('port', config.luxPort);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
-//app.use(express.favicon(__dirname + '/public/images/favicon.ico'));
 app.use(express.logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded());
 app.use(express.methodOverride());
 app.use(app.router);
-//app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.errorHandler(config.errorHandlerOptions));
 
+/* Let express load static assets for development
+   nginx will load static assets for production */
 if ('development' == app.get('env')) {
-	app.use(express.errorHandler());
+  app.use(express.favicon(__dirname + '/public/images/favicon.ico'));
+  app.use(express.static(path.join(__dirname, 'public')));
 }
 
 /* All Available Routes */
-app.get('/lux', routes.index);
-app.get('/lux/gps', gps.findAll);
-app.get('/lux/lumens', lumens.findAll);
+app.get('/', routes.index);
+app.get('/gps', gps.findAll);
+app.get('/lumens', lumens.findAll);
 
 /* Create HTTP Server and Listen on a Port */
-http.createServer(app).listen(app.get('port'), app.get('ip'), function(){
-	console.log('Node server lending an ear on port ' + app.get('port') + ' and IP ' + app.get('ip'));
+http.createServer(app).listen(config.luxPort, config.luxHost, function(){
+	console.log('Node server lending an ear on port ' + config.luxPort + ' and IP ' + config.luxHost);
 });
